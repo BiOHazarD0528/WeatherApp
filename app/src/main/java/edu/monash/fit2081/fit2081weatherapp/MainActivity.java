@@ -50,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
                                 TextView humidityText = findViewById(R.id.humid);
                                 TextView windText = findViewById(R.id.wind);
 
-                                String temperature = "";
-                                String wind = "";
-                                String precipitation = "";
-                                String humidity = "";
+                                String temperature;
+                                String wind;
+                                String precipitation;
+                                String humidity;
                                 try {
                                     JSONObject listItems = response.getJSONObject("current");
                                     temperature = listItems.getString("temp_c");
